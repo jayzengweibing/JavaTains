@@ -10,10 +10,17 @@
   <name>demo1</name>
   <url>http://maven.apache.org</url>
 
+ <build>
+ <plugins>
+ <plugin>
+  <groupid>org.springframework.boot</groupid>
+  <artifactid>spring-boot-maven-plugin</artifactid>
+ </plugin>
+ </plugins>
+</build>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

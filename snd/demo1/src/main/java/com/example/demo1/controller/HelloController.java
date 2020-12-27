@@ -1,10 +1,15 @@
+package com.example.demo1.controller;
+
+import org.springframework.stereotype.Controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
 
 @Controller("/hello")
-public static class HelloController {
+public class HelloController {
 
-	@RequestBody("/")
+	@RequestMapping("/")
 	public String index(){
-		return "Hello World";
+		return "hi";
 	}
-
 }
